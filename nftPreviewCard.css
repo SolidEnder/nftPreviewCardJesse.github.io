@@ -1,0 +1,126 @@
+body {
+	background-color: hsl(217, 54%, 11%);
+}
+div#nftContainer {
+	opacity: 1;
+	width: 300px;
+	height: 530px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	background-color: hsl(216, 50%, 16%);
+	border-radius: 10px;
+	
+}
+img#nftImg {
+	opacity: 1;
+	width: 275px;
+	height: 275px;
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	transition: .5s ease;
+	backface-display: hidden;
+}
+img#hoverView {
+	transition: .5s ease;
+	opacity: 0;
+	cursor: pointer;
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 150px;
+	left: 150px;
+	transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, 50%);
+}
+#imgContainer:hover #nftImg{
+	opacity: 0.3;
+}
+#imgContainer:hover #hoverView{
+	opacity: 1;
+}
+h3#equilibrium {
+	color: white;
+	position: absolute;
+	top: 300px;
+	left: 10px;
+	justify-content: inline;
+	font-family: "Outfit", sans-serif;
+}
+p#eqMsg {
+	color: hsl(215, 51%, 70%);
+	position: absolute;
+	top: 340px;
+	left: 10px;
+	justify-content: inline;
+	font-family: "Outfit", sans-serif;
+}
+img#ethIcon {
+	width: 10px;
+	height: 15px;
+	position: absolute;
+	top: 415px;
+	left: 5px;
+}
+p#ethValue {
+	color: hsl(178, 100%, 50%);
+	position: absolute;
+	top: 400px;
+	left: 220px;
+	font-family: "Outfit", sans-serif;
+}
+img#timeIcon {
+	position: absolute;
+	top: 412px;
+	left: 200px;
+	width: 20px;
+	height: 20px;
+}
+p#deadline {
+	color: hsl(178, 100%, 50%);
+	position: absolute;
+	top: 400px;
+	left: 20px;
+	font-family: "Outfit", sans-serif;
+}
+div#creatorContainer {
+	position: absolute;
+	top: 460px;
+	left: 10px;
+	border: 1px solid hsl(215, 32%, 27%);
+	width: 260px;
+}
+img#creatorAvatar {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 15px;
+	border: 1px solid white;
+	border-radius: 50%;
+}
+img#creatorAvatar {
+	cursor: pointer;
+}
+p#creator {
+	color: hsl(178, 100%, 50%);
+	position: absolute;
+	top: 10px;
+	left: 40px;
+	justify-content: inline;
+	font-family: "Outfit", sans-serif;
+}
+a {
+	color: white;
+}
+a:hover {
+	cursor: pointer;
+}
+
+@media (min-width: 600px) {
+	div#nftContainer {
+		position: absolute;
+		left: 500px;
+		top: 25px;
+	}
+}
